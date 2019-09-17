@@ -11,10 +11,10 @@
    side pins of the potentiometer go to +5V and ground
  * LED connected from digital pin 9 to ground
 
-Code modified from Tom Igoe
+CCode modified from Tom Igoe
  created 29 Dec. 2008
  modified 27 Feb 2018
- by Tom Igoe
+ by Clint Posey
 
  This example code is in the public domain.
 
