@@ -40,12 +40,12 @@ void loop() {
   sensorValue = analogRead(SensorInPin);
   // map it to the range of the analog out:
   outputValue = map(sensorValue, 0, 1023, 0, 255);
- if(sensorValue > 700);{
+ if(sensorValue > 750);{
     pillstate = 1;
     outputValue = LOW;
     
    };
-   if(sensorValue < 300);{
+   if(sensorValue < 250);{
     delay(300);
     pillstate = 0;
     outputValue = HIGH;
@@ -70,5 +70,5 @@ Serial.println(outputValue);
   // wait 1 milliseconds before the next loop
   // for the analog-to-digital converter to settle
   // after the last reading:
-  delay(1);
+  delay(.75);
 }
